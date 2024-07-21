@@ -161,13 +161,6 @@ public class TTT implements ActionListener {
 	label.setText("X wins");
         
         tryagain();
-//        try {
-//            Thread.sleep(2000);
-//        } 
-//        catch (InterruptedException ex) {
-//            System.out.println(ex);
-//        }
-//        Tryagain ta = new Tryagain();
         
     }
 
@@ -181,25 +174,12 @@ public class TTT implements ActionListener {
 	}
 	label.setText("O wins");
         
-        tryagain();  //HERE IT STOPED
-//        try {
-//            Thread.sleep(2000);
-//        } 
-//        catch (InterruptedException ex) {
-//            System.out.println(ex);
-//        }
-//        Tryagain ta = new Tryagain();
+        tryagain(); 
     }
     
     public void tryagain(){
-        
-        try {
-            Thread.sleep(2000);
-            Tryagain ta = new Tryagain();
-        } 
-        catch (InterruptedException ex) {
-            System.out.println(ex);
-        }
-        
+
+	Tryagain ta = new Tryagain();
+                
     }
 }
